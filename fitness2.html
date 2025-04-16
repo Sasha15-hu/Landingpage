@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="description" content="Fitness, allenamento, guide">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/js/script.js"></script>
+<title>fitness.html</title>
+	
+</head>
+
+<body>
+	 <!--header-->
+    <header> 
+		
+		  <style>
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3em;
+      text-shadow: 10px 2px 5px rgba(0,0,0,0.7);
+      margin: 0;
+    }
+
+    .overlay {
+      position:absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4); /* sovrapposizione scura */
+    }
+  </style>
+	<div class="cover-image">
+           
+        </div>	
+	 
+		
+  
+</header>
+	
+	<div class="hero">
+    
+
+    <div class="overlay"></div><img src="img/palestra.png" alt="fitness">
+    <h1>Fit & Sano </h1>
+  </div>
+
+	<!--main-->
+    <main>
+        <div class="container">
+			
+
+                <h2 style="background-color:aqua;">Chi sono</h2>
+                <p style="text-align: center; font-family: verdana, sans-serif; font-size: 2em;">Ciao! Mi chiamo Thomas Grid.<br>Sono un appassionato di fitness, ho creato questo metodo Fit & Sano per permettere a chiunque, anche i più impegnati, di allenarsi in modo costante, pratico e motivante.</p>
+			<br>
+			<br>
+             
+			
+			
+			
+            <section class="section0">
+              <h1> Il Metodo per Rimanere in Forma con 3 Allenamenti a Settimana</h1>
+              <p>Scopri come migliorare la tua forma fisica, aumentare l’energia e sentirti meglio in soli 30-45 minuti, 3 volte a settimana — anche se hai poco tempo.</p>	
+				<img src="img/ebook.png" alt="Ebook fitness" style="width:100%; max-width:300px; height:auto; display:block; margin: 20px auto; margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;"><br>
+				<br>    
+				<br>
+              <a href="https://www.amazon.it" class="btn">Acquista Ora a 19,90€</a>
+					
+		
+				
+				
+
+				
+
+			
+            </section>
+        
+            <section class="section1">
+                <h2>Questo eBook è perfetto per te se:</h2>
+                <ul>
+                  <li>Vuoi rimetterti in forma senza diete estreme o ore in palestra</li>
+                  <li>Hai poco tempo ma vuoi sentirti energico e attivo</li>
+                  <li>Cerchi un programma semplice, pratico e sostenibile</li>
+                  <li>Vuoi allenarti a casa o ovunque ti trovi</li>
+                </ul>
+              </section>
+          
+              <section class="section2">
+                <h2>Cosa troverai nell'eBook</h2>
+                <ul>
+                  <li>22 pagine di contenuti chiari e pratici</li>
+                  <li>Piano di allenamento da 4 settimane</li>
+                  <li>Guida alla sana alimentazione</li>
+                  <li>Routine di stretching e mobilità</li>
+                  <li>Diario dei progressi + checklist</li>
+                  <li>Playlist, app consigliate e bonus</li>
+                </ul>
+              </section>
+          
+              <section class="section3">
+                <h2>Programma di Allenamento Settimanale</h2>
+                <ul>
+                  <li><strong>Giorno 1:</strong> Full Body</li>
+                  <li><strong>Giorno 2:</strong> Mobilità e stretching</li>
+                  <li><strong>Giorno 3:</strong> Cardio leggero o HIIT</li>
+                </ul>
+                <p>Nessuna attrezzatura, solo 3 sessioni da 30-45 minuti!</p>
+              </section>
+          
+              
+          
+              <section class="section5">
+                <h2>Cosa ricevi</h2>
+                <ul>
+                  <li>PDF completo di 22 pagine</li>
+                  <li>Programma di allenamento 4 settimane</li>
+                  <li>Checklist, diario, risorse bonus</li>
+                  <li>Accesso a futuri aggiornamenti</li>
+                </ul>
+              </section>
+          
+              <section class="section6">
+                <h2>Garanzia e Sicurezza</h2>
+                <ul>
+                  <li>Soddisfatto o rimborsato entro 7 giorni</li>
+                  <li>Pagamento sicuro con carta o PayPal</li>
+                  <li>Ricevi l’eBook subito via email</li>
+                </ul>
+              </section>
+          
+              <section class="section7">
+                <h2>Inizia oggi</h2>
+                <p>Scarica subito il tuo eBook e inizia il cambiamento verso una vita più attiva e sana.</p>
+				  <div class="container-icon col-12 col-md-6 col-lg-4" id="container-it-funnel">
+    <svg class="icon"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-funnel"></use></svg>
+  </div>
+				  
+               <button onclick="scrollToTop()" id="scrollTopBtn" title="Torna su">Torna su</button>
+
+              </section>
+          
+            </div>
+		
+		<div id="countdown" style="font-size: 50px; color: red; text-align: center; margin: 20px 0;">
+  Offerta valida ancora per: <span id="timer"></span>
+			 </div>
+    </main>
+	
+	</body>
+<script>
+  // Assicuriamoci che il JavaScript si carichi solo quando il DOM è pronto
+  document.addEventListener("DOMContentLoaded", function () {
+
+    // Data di scadenza (due settimane da oggi: 29 aprile 2025 alle 23:59:59)
+    const countDownDate = new Date("April 29, 2025 23:59:59").getTime();
+
+    // Funzione che aggiorna il countdown ogni secondo
+    const countdownFunction = setInterval(function () {
+
+      // Ottieni la data e ora attuali
+      const now = new Date().getTime();
+
+      // Calcola la differenza tra la data di scadenza e la data attuale
+      const distance = countDownDate - now;
+
+      // Se il countdown è finito, mostra il messaggio "Offerta scaduta"
+      if (distance < 0) {
+        clearInterval(countdownFunction);
+        document.getElementById("countdown").innerHTML = "L'offerta è scaduta!";
+        return;
+      }
+
+      // Calcola giorni, ore, minuti, secondi
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Mostra il risultato nel div con id "timer"
+      document.getElementById("timer").innerHTML =
+        days + "g " + hours + "h " + minutes + "m " + seconds + "s ";
+      
+    }, 1000);
+  });
+</script>
+
+    <!--footer-->
+   <footer style="background: #2c3e50; color: #fff; text-align: center; padding: 20px 10px; font-size: 14px; margin-top: 40px;">
+    
+	  
+  <p>© 2025 Fit & Sano. Tutti i diritti riservati.</p>
+  <p>
+    Creato da <strong>Dj</strong>  
+   
+
+  </p> 
+		
+	  
+	   
+   </footer>
+</body>
+</html>

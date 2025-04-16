@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+ body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; }
+
+    .container { max-width: 800px; margin: auto; padding: 20px; background: #fff; }
+
+    h1, h2, h3 { color: #2c3e50;  }
+
+    .btn { display: inline-block; background: #27ae60; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+
+    .section1 { margin-bottom: 40px; border-bottom: medium; }
+    ul { padding-left: 20px; }
+			
+/* Immagine */
+.product-image {
+    width: 10%;
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cover-image{
+	width: 100%;
+	height: auto;
+	display: flex;
+	
+}
+/* Animazione Fade-in del titolo */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animazione del bottone al clic */
+@keyframes clickEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Transizione della sezione che si rende visibile */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1.5s ease-out;
+}
+
+/* Hover effetto bottone */
+.btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #2ecc71;
+}
+
